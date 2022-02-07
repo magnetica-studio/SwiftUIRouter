@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
 	name: "SwiftUIRouter",
 	platforms: [
-		.macOS(.v11),
+		.macOS(.v10_15),
 		.iOS(.v14),
 		.tvOS(.v14),
 		.watchOS(.v7)
@@ -15,11 +15,13 @@ let package = Package(
 			name: "SwiftUIRouter",
 			targets: ["SwiftUIRouter"]),
 	],
-	dependencies: [],
+	dependencies: [
+        .package(name: "PublishedObject", url: "https://github.com/Amzd/PublishedObject.git", .branch("master"))
+    ],
 	targets: [
 		.target(
 			name: "SwiftUIRouter",
-			dependencies: [],
+			dependencies: ["PublishedObject"],
 			path: "Sources"),
 		.testTarget(
 			name: "SwiftUIRouterTests",

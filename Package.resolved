@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PublishedObject",
+        "repositoryURL": "https://github.com/Amzd/PublishedObject.git",
+        "state": {
+          "branch": "master",
+          "revision": "0592e0392d0d9e1d29cd15d7379a601e0bbe3147",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
